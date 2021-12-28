@@ -10,19 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form5 : Form
+    public partial class Profile : Form
     {
-        public Form5()
+        public Profile()
         {
             InitializeComponent();
         }
-
-        DataClasses1DataContext db5 = new DataClasses1DataContext();
+        DataClasses1DataContext db = new DataClasses1DataContext();
         private void button3_Click(object sender, EventArgs e)
-        {
-
-            
-            var q = (from row in db5.Users.ToList()
+        {        
+            var q = (from row in db.Users.ToList()
                      where textBox2.Text == row.UserID
                      select row).ToList();
             foreach (var elemnt in q)
@@ -33,13 +30,10 @@ namespace WindowsFormsApplication1
                 Passtext.Text = elemnt.UserPassword;
                 Typetext.Text = elemnt.UserType;
             }
-
         }
-
         private void button1_Click(object sender, EventArgs e)
-        {
-            
-            var q = (from row in db5.Users.ToList()
+        {     
+            var q = (from row in db.Users.ToList()
                      where textBox2.Text == row.UserID
                      select row).ToList();
             foreach (var elemnt in q)
@@ -49,15 +43,22 @@ namespace WindowsFormsApplication1
                 elemnt.UserPhone = Phonetext.Text;
                 elemnt.UserPassword = Passtext.Text;
                 elemnt.UserType = Typetext.Text;
-                db5.SubmitChanges();
+                db.SubmitChanges();
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            var myForm = new Form3();
-            myForm.Show();
-
+            
+            if (Typetext.Text == "Renter")
+            {
+                var myForm = new Renter();
+                myForm.Show();
+            }
+            if (Typetext.Text == "Lessor")
+            {
+                var myForm = new Lessor();
+                myForm.Show();
+            }
             this.Hide();
         }
     }

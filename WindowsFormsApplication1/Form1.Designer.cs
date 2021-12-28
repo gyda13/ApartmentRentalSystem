@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class SignUp
     {
         /// <summary>
         /// Required designer variable.
@@ -35,13 +35,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textPass = new System.Windows.Forms.TextBox();
+            this.textPhone = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
+            this.textName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -116,36 +116,36 @@
             this.radioButton2.Text = "Lessor";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // textPass
             // 
-            this.textBox4.Location = new System.Drawing.Point(179, 253);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 26);
-            this.textBox4.TabIndex = 10;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textPass.Location = new System.Drawing.Point(179, 253);
+            this.textPass.Name = "textPass";
+            this.textPass.Size = new System.Drawing.Size(201, 26);
+            this.textPass.TabIndex = 10;
+            this.textPass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // textPhone
             // 
-            this.textBox3.Location = new System.Drawing.Point(179, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(201, 26);
-            this.textBox3.TabIndex = 11;
+            this.textPhone.Location = new System.Drawing.Point(179, 199);
+            this.textPhone.Name = "textPhone";
+            this.textPhone.Size = new System.Drawing.Size(201, 26);
+            this.textPhone.TabIndex = 11;
             // 
-            // textBox2
+            // textEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(179, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 26);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textEmail.Location = new System.Drawing.Point(179, 153);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(201, 26);
+            this.textEmail.TabIndex = 12;
+            this.textEmail.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox1
+            // textName
             // 
-            this.textBox1.Location = new System.Drawing.Point(179, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 26);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textName.Location = new System.Drawing.Point(179, 95);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(201, 26);
+            this.textName.TabIndex = 15;
+            this.textName.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label6
             // 
@@ -168,13 +168,13 @@
             this.groupBox1.Text = "Type";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox5
+            // textId
             // 
-            this.textBox5.Location = new System.Drawing.Point(179, 33);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(201, 26);
-            this.textBox5.TabIndex = 18;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textId.Location = new System.Drawing.Point(179, 33);
+            this.textId.Name = "textId";
+            this.textId.Size = new System.Drawing.Size(201, 26);
+            this.textId.TabIndex = 18;
+            this.textId.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label1
             // 
@@ -186,25 +186,25 @@
             this.label1.Text = "UserID";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // Form1
+            // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(649, 553);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textId);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textName);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textEmail);
+            this.Controls.Add(this.textPhone);
+            this.Controls.Add(this.textPass);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Name = "Form1";
+            this.Name = "SignUp";
             this.Text = "Sign up";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -223,13 +223,13 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textPass;
+        private System.Windows.Forms.TextBox textPhone;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.TextBox textName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textId;
         private System.Windows.Forms.Label label1;
     }
 }

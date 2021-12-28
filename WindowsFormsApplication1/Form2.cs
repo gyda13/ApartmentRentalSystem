@@ -10,61 +10,50 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form2 : Form
+    public partial class SignIn : Form
     {
-
-        public Form2()
+        public SignIn()
         {
             InitializeComponent();
         }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            textBox2.PasswordChar = '*';
+            textPass.PasswordChar = '*';
         }
-
         DataClasses1DataContext db2 = new DataClasses1DataContext();
         private void button1_Click(object sender, EventArgs e)
-        {
-
-
-          
-                if (IsvalidUser(textBox1.Text, textBox2.Text))
+        {         
+                if (IsvalidUser(textName.Text, textPass.Text))
                 {
                     var q = (from row in db2.Users.ToList()
-                             where textBox1.Text == row.UserName
+                             where textName.Text == row.UserName
                              select row.UserType).ToList();
                     foreach (var elemnt in q)
                     {
                         if (elemnt == "Renter")
                         {
-                            var myForm = new Form3();
+                            var myForm = new Renter();
                             myForm.Show();
                             this.Hide();
                         }
                         if (elemnt == "Lessor")
                         {
-                            var myForm = new Form4();
+                            var myForm = new Lessor();
                             myForm.Show();
                             this.Hide();
                         }
                     }
-
                 }
 
                 else
                     MessageBox.Show("Invalid username or password");
-            
-
         }
         private bool IsvalidUser(string userName, string password)
-        {
-           
+        {    
             var q = from row in db2.Users
-                    where row.UserName == textBox1.Text
-                    && row.UserPassword == textBox2.Text
+                    where row.UserName == textName.Text
+                    && row.UserPassword == textPass.Text
                     select row;
-
             if (q.Any())
             {
                 return true;
@@ -73,15 +62,18 @@ namespace WindowsFormsApplication1
             {
                 return false;
             }
-
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            var myForm = new Form1();
+            var myForm = new SignUp();
             myForm.Show();
 
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
 

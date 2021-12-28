@@ -45,10 +45,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddApartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddApartment.Designer.cs">
+      <DependentUpon>AddApartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApartmentRentalSystemDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ApartmentRentalSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentRentalSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApartmentRentalSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentRentalSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApartmentRentalSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentRentalSystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApartmentRentalSystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentRentalSystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApartmentRentalSystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentRentalSystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApartmentRentalSystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApartmentRentalSystemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApartmentRentalSystemDataSet6.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataClasses1.cs">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
@@ -88,11 +124,103 @@
     <Compile Include="Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyApartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyApartment.Designer.cs">
+      <DependentUpon>MyApartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserClass.cs" />
+    <Compile Include="YourRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YourRequest.Designer.cs">
+      <DependentUpon>YourRequest.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="YourRequest.resx">
+      <DependentUpon>YourRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ApartmentRentalSystemDataSet1.xsc">
+      <DependentUpon>ApartmentRentalSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApartmentRentalSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet1.xss">
+      <DependentUpon>ApartmentRentalSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet2.xsc">
+      <DependentUpon>ApartmentRentalSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApartmentRentalSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet2.xss">
+      <DependentUpon>ApartmentRentalSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet3.xsc">
+      <DependentUpon>ApartmentRentalSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApartmentRentalSystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet3.xss">
+      <DependentUpon>ApartmentRentalSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet4.xsc">
+      <DependentUpon>ApartmentRentalSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApartmentRentalSystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet4.xss">
+      <DependentUpon>ApartmentRentalSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet5.xsc">
+      <DependentUpon>ApartmentRentalSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApartmentRentalSystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet5.xss">
+      <DependentUpon>ApartmentRentalSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet6.xsc">
+      <DependentUpon>ApartmentRentalSystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ApartmentRentalSystemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ApartmentRentalSystemDataSet6.xss">
+      <DependentUpon>ApartmentRentalSystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="AddApartment.resx">
+      <DependentUpon>AddApartment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyApartment.resx">
+      <DependentUpon>MyApartment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,6 +267,8 @@
       <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\DataSources\AddApartment.datasource" />
+    <None Include="Properties\DataSources\ApartmentClass.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

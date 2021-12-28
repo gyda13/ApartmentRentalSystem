@@ -10,11 +10,44 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form4 : Form
+    public partial class Lessor : Form
     {
-        public Form4()
+        public Lessor()
         {
-            InitializeComponent();
+            InitializeComponent();         
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var myForm = new Profile();
+            myForm.Show();
+            this.Hide();
+        }
+        DataClasses1DataContext db = new DataClasses1DataContext();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var myForm = new MyApartment();
+            myForm.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var myForm = new AddApartment();
+            myForm.Show();
+            this.Hide();
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var myForm = new YourRequest();
+            myForm.Show();
+            this.Hide();
+        }
+
+        private void Lessor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
