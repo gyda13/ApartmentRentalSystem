@@ -15,3 +15,7 @@ C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFo
 C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MyApartment.resources
 C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.RentAp.resources
 C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.YourRequest.resources
+C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.manifest
+C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.application
+C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe.manifest
+C:\Users\gyda2\onedrive\المستندات\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.application
