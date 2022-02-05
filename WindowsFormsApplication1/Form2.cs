@@ -52,7 +52,7 @@ namespace WindowsFormsApplication1
         {    
             var q = from row in db2.Users
                     where row.UserName == textName.Text
-                    && row.UserPassword == textPass.Text
+                    && row.UserPassword== textPass.Text
                     select row;
             if (q.Any())
             {
@@ -72,6 +72,11 @@ namespace WindowsFormsApplication1
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
         {
 
         }

@@ -19,6 +19,7 @@ namespace WindowsFormsApplication1
         DataClasses1DataContext db = new DataClasses1DataContext();
         private void button3_Click(object sender, EventArgs e)
         {        
+
             var q = (from row in db.Users.ToList()
                      where textBox2.Text == row.UserID
                      select row).ToList();

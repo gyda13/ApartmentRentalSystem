@@ -31,18 +31,18 @@ namespace WindowsFormsApplication1
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (this.comboBox1.SelectedIndex)
-            { 
+            {
                 case 0:
                     dataGridView1.DataSource = (from c in db.Apartments
                                                 where c.Category.ToLower().StartsWith("FlatSharing")
                                                 select c).ToList();
                     break;
-               case 1:
+                case 1:
                     dataGridView1.DataSource = (from c in db.Apartments
                                                 where c.Category.ToLower().StartsWith("Studio")
                                                 select c).ToList();
                     break;
-               case 2:
+                case 2:
                     dataGridView1.DataSource = (from c in db.Apartments
                                                 where c.Category.ToLower().StartsWith("Condo")
                                                 select c).ToList();
@@ -51,24 +51,25 @@ namespace WindowsFormsApplication1
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (this.comboBox1.SelectedIndex)
+            switch (this.comboBox2.SelectedIndex)
             {
                 case 0:
                     dataGridView1.DataSource = (from c in db.Apartments
-                                                where c.Category.ToLower().StartsWith("less than 15000 yearly")
+                                                where c.Price.ToLower().StartsWith("less than 15000 yearly")
                                                 select c).ToList();
                     break;
                 case 1:
                     dataGridView1.DataSource = (from c in db.Apartments
-                                                where c.Category.ToLower().StartsWith("15000-35000 yearly")
+                                                where c.Price.ToLower().StartsWith("15000-35000 yearly")
                                                 select c).ToList();
                     break;
                 case 2:
                     dataGridView1.DataSource = (from c in db.Apartments
-                                                where c.Category.ToLower().StartsWith("higher than 35000 yearly")
+                                                where c.Price.ToLower().StartsWith("higher than 35000 yearly")
                                                 select c).ToList();
                     break;
             }
+            
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -80,6 +81,17 @@ namespace WindowsFormsApplication1
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+ 
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+           
+          
 
         }
     }

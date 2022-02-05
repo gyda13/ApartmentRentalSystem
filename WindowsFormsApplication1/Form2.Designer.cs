@@ -118,6 +118,7 @@
             this.Controls.Add(this.button1);
             this.Name = "SignIn";
             this.Text = "Sign in";
+            this.Load += new System.EventHandler(this.SignIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,7 +35,7 @@ namespace WindowsFormsApplication1
             db.Users.InsertOnSubmit(u);
             db.SubmitChanges();                 
         }
-        public bool Isvalid(string name, string email, string id)
+        public  bool Isvalid(string name, string email, string id)
         {
             var q = from row in db.Users
                     where row.UserName == name

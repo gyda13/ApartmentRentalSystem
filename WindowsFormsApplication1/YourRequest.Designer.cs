@@ -32,20 +32,39 @@
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.apartmentRentalSystemDataSet6 = new WindowsFormsApplication1.ApartmentRentalSystemDataSet6();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.apartmentRentalSystemDataSet6 = new WindowsFormsApplication1.ApartmentRentalSystemDataSet6();
-            this.requestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.requestTableAdapter = new WindowsFormsApplication1.ApartmentRentalSystemDataSet6TableAdapters.RequestTableAdapter();
+            this.userTableAdapter1 = new WindowsFormsApplication1.ApartmentRentalSystemDataSetTableAdapters.UserTableAdapter();
+            this.userTableAdapter2 = new WindowsFormsApplication1.ApartmentRentalSystemDataSetTableAdapters.UserTableAdapter();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.apartmentRentalSystemDataSet1 = new WindowsFormsApplication1.ApartmentRentalSystemDataSet();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.apartmentRentalSystemDataSet7 = new WindowsFormsApplication1.ApartmentRentalSystemDataSet7();
+            this.requestBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.requestTableAdapter1 = new WindowsFormsApplication1.ApartmentRentalSystemDataSet7TableAdapters.RequestTableAdapter();
             this.requestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apartmentNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestStatusDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -80,21 +99,15 @@
             this.radioButton1.Text = "accept";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // requestBindingSource
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.requestIDDataGridViewTextBoxColumn,
-            this.userIDDataGridViewTextBoxColumn,
-            this.apartmentNoDataGridViewTextBoxColumn,
-            this.requestStatusDataGridViewCheckBoxColumn});
-            this.dataGridView1.DataSource = this.requestBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(447, 178);
-            this.dataGridView1.TabIndex = 19;
+            this.requestBindingSource.DataMember = "Request";
+            this.requestBindingSource.DataSource = this.apartmentRentalSystemDataSet6;
+            // 
+            // apartmentRentalSystemDataSet6
+            // 
+            this.apartmentRentalSystemDataSet6.DataSetName = "ApartmentRentalSystemDataSet6";
+            this.apartmentRentalSystemDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox1
             // 
@@ -124,19 +137,52 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // apartmentRentalSystemDataSet6
-            // 
-            this.apartmentRentalSystemDataSet6.DataSetName = "ApartmentRentalSystemDataSet6";
-            this.apartmentRentalSystemDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // requestBindingSource
-            // 
-            this.requestBindingSource.DataMember = "Request";
-            this.requestBindingSource.DataSource = this.apartmentRentalSystemDataSet6;
-            // 
             // requestTableAdapter
             // 
             this.requestTableAdapter.ClearBeforeFill = true;
+            // 
+            // userTableAdapter1
+            // 
+            this.userTableAdapter1.ClearBeforeFill = true;
+            // 
+            // userTableAdapter2
+            // 
+            this.userTableAdapter2.ClearBeforeFill = true;
+            // 
+            // apartmentRentalSystemDataSet1
+            // 
+            this.apartmentRentalSystemDataSet1.DataSetName = "ApartmentRentalSystemDataSet";
+            this.apartmentRentalSystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.requestIDDataGridViewTextBoxColumn,
+            this.userIDDataGridViewTextBoxColumn,
+            this.apartmentNoDataGridViewTextBoxColumn,
+            this.requestStatusDataGridViewCheckBoxColumn});
+            this.dataGridView1.DataSource = this.requestBindingSource1;
+            this.dataGridView1.Location = new System.Drawing.Point(94, 153);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(444, 196);
+            this.dataGridView1.TabIndex = 23;
+            // 
+            // apartmentRentalSystemDataSet7
+            // 
+            this.apartmentRentalSystemDataSet7.DataSetName = "ApartmentRentalSystemDataSet7";
+            this.apartmentRentalSystemDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // requestBindingSource1
+            // 
+            this.requestBindingSource1.DataMember = "Request";
+            this.requestBindingSource1.DataSource = this.apartmentRentalSystemDataSet7;
+            // 
+            // requestTableAdapter1
+            // 
+            this.requestTableAdapter1.ClearBeforeFill = true;
             // 
             // requestIDDataGridViewTextBoxColumn
             // 
@@ -167,19 +213,27 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 509);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Name = "YourRequest";
             this.Text = "YourRequest";
             this.Load += new System.EventHandler(this.YourRequest_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentRentalSystemDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.requestBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,13 +244,24 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private ApartmentRentalSystemDataSet6 apartmentRentalSystemDataSet6;
         private System.Windows.Forms.BindingSource requestBindingSource;
         private ApartmentRentalSystemDataSet6TableAdapters.RequestTableAdapter requestTableAdapter;
+        private ApartmentRentalSystemDataSetTableAdapters.UserTableAdapter userTableAdapter1;
+        private ApartmentRentalSystemDataSetTableAdapters.UserTableAdapter userTableAdapter2;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private System.Windows.Forms.BindingSource bindingSource3;
+        private System.Windows.Forms.BindingSource bindingSource4;
+        private System.Windows.Forms.BindingSource bindingSource5;
+        private ApartmentRentalSystemDataSet apartmentRentalSystemDataSet1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private ApartmentRentalSystemDataSet7 apartmentRentalSystemDataSet7;
+        private System.Windows.Forms.BindingSource requestBindingSource1;
+        private ApartmentRentalSystemDataSet7TableAdapters.RequestTableAdapter requestTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn requestIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn apartmentNoDataGridViewTextBoxColumn;

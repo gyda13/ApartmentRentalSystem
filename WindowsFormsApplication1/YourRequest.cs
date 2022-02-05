@@ -35,6 +35,8 @@ namespace WindowsFormsApplication1
         }
         private void YourRequest_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'apartmentRentalSystemDataSet7.Request' table. You can move, or remove it, as needed.
+            this.requestTableAdapter1.Fill(this.apartmentRentalSystemDataSet7.Request);
             // TODO: This line of code loads data into the 'apartmentRentalSystemDataSet6.Request' table. You can move, or remove it, as needed.
             this.requestTableAdapter.Fill(this.apartmentRentalSystemDataSet6.Request);
 
@@ -42,6 +44,11 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
