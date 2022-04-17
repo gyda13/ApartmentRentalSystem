@@ -1,3 +1,2 @@
 * linguist-vendored
-*.Html linguist-vendored=false
-*.C# linguist-vendored=true
+*.rb linguist-language=C#
